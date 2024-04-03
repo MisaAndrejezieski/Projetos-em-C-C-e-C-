@@ -16,5 +16,6 @@ class Benco {
         int codigo_produto;
         float total_production_time;
         char outro_produto;
+        /*oi*/
 };
 
