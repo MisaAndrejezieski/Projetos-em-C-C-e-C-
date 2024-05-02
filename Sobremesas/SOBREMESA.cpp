@@ -189,7 +189,7 @@
 	        system("cls");
 	    } while (resposta == 's' || resposta == 'S');	
 	    		cout << "-----------------------------------------\n";
-				cout << "           SAYONAHA PANACA!\n";
+				cout << "           SAYONAHA - PANACA!\n";
 				cout << "-----------------------------------------\n";
 				system("pause");
 	    		return 0;
