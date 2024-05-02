@@ -6,7 +6,8 @@
 	#include "PrimePack.h"
 	#include "EltonFlan.h"
 	#include "FormsealR.h"
-	
+	02/05/24 18:02
+
 	using namespace std;
 	
 	int main() {
@@ -167,7 +168,8 @@
 	            	system("pause");
 	            	system("cls");
 					return main();
-	           	}
+	        
+   	}
 	
 	    		cout << "Insira o numero de caixas por producao: ";
 	    		cin >> f.caixas_por_producao;
