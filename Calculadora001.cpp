@@ -1,7 +1,12 @@
-    #include <stdio.h>
-    #include <stdlib.h>
+#include <iostream>
+#include <string>
+using namespace std;
+int main ()
 
-int main() {
-    printf("Ola, mundo!");
-    return 0;
+{
+ string s; 
+ cout << "jhun \n"; 
+ cin >> s; 
+ cout << "Hello, " << s << '\n' ; 
+ return 0; // esta instrução return não é necessária 
 }
