@@ -8,5 +8,5 @@ int main ()
  cout << "jhun \n"; 
  cin >> s; 
  cout << "Hello, " << s << '\n' ; 
- return 0; // esta instrução return não é necessária 
+ return 0; // esta instruÃ§Ã£o return nÃ£o Ã© necessÃ¡ria 
 }
