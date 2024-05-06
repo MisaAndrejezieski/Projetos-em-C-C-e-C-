@@ -4,7 +4,7 @@
 
 int main() {
     std::string frase;
-
+	print("-----------------------------");
     std::cout << "Digite uma frase: ";
     std::getline(std::cin, frase);
 
@@ -16,7 +16,7 @@ int main() {
 
     std::transform(frase.begin(), frase.end(), frase.begin(), ::toupper);
 
-    std::cout << "Frase invertida em maiúsculas: " << frase << std::endl;
+    std::cout << "Frase invertida em maiusculas: " << frase << std::endl;
 
     return 0;
 }
