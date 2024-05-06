@@ -6,7 +6,7 @@
 	#include "PrimePack.h"
 	#include "EltonFlan.h"
 	#include "FormsealR.h"
-	02/05/24 18:02
+	/*02/05/24 18:02*/
 
 	using namespace std;
 	
