@@ -4,7 +4,7 @@
 
 int main() {
     std::string frase;
-	printf("=====================================");
+	printf("=====================================\n");
     std::cout << "Digite uma frase: ";
     std::getline(std::cin, frase);
 
