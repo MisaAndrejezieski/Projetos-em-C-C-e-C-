@@ -1,39 +1,42 @@
-#include <iostream>
-using namespace std;
+#include <QApplication>
+#include <QPushButton>
+#include <QVBoxLayout>
+#include <QLineEdit>
+#include <QLabel>
 
-int main() {
-    int num1, num2;
-    char operacao;
+int main(int argc, char **argv)
+{
+    QApplication app(argc, argv);
 
-    cout << "Digite o primeiro número: ";
-    cin >> num1;
+    QWidget *window = new QWidget;
+    QVBoxLayout *layout = new QVBoxLayout;
 
-    cout << "Digite a operação (+, -, *, /): ";
-    cin >> operacao;
+    QLabel *label = new QLabel("0");
+    QLineEdit *lineEdit = new QLineEdit;
+    QPushButton *button0 = new QPushButton("0");
+    QPushButton *button1 = new QPushButton("1");
+    QPushButton *button2 = new QPushButton("2");
+    QPushButton *button3 = new QPushButton("3");
+    QPushButton *buttonPlus = new QPushButton("+");
+    QPushButton *buttonMinus = new QPushButton("-");
+    QPushButton *buttonMultiply = new QPushButton("*");
+    QPushButton *buttonDivide = new QPushButton("/");
+    QPushButton *buttonEquals = new QPushButton("=");
 
-    cout << "Digite o segundo número: ";
-    cin >> num2;
+    layout->addWidget(label);
+    layout->addWidget(lineEdit);
+    layout->addWidget(button0);
+    layout->addWidget(button1);
+    layout->addWidget(button2);
+    layout->addWidget(button3);
+    layout->addWidget(buttonPlus);
+    layout->addWidget(buttonMinus);
+    layout->addWidget(buttonMultiply);
+    layout->addWidget(buttonDivide);
+    layout->addWidget(buttonEquals);
 
-    switch(operacao) {
-        case '+':
-            cout << "Resultado: " << num1 + num2 << endl;
-            break;
-        case '-':
-            cout << "Resultado: " << num1 - num2 << endl;
-            break;
-        case '*':
-            cout << "Resultado: " << num1 * num2 << endl;
-            break;
-        case '/':
-            if(num2 != 0)
-                cout << "Resultado: " << num1 / num2 << endl;
-            else
-                cout << "Erro! Divisão por zero não é permitida." << endl;
-            break;
-        default:
-            cout << "Operação inválida!" << endl;
-            break;
-    }
+    window->setLayout(layout);
+    window->show();
 
-    return 0;
+    return app.exec();
 }
