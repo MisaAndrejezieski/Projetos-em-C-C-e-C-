@@ -1,12 +1,39 @@
 #include <iostream>
-#include <string>
 using namespace std;
-int main ()
 
-{
- string s; 
- cout << "jhun \n"; 
- cin >> s; 
- cout << "Hello, " << s << '\n' ; 
- return 0; // esta instrução return não é necessária 
+int main() {
+    int num1, num2;
+    char operacao;
+
+    cout << "Digite o primeiro número: ";
+    cin >> num1;
+
+    cout << "Digite a operação (+, -, *, /): ";
+    cin >> operacao;
+
+    cout << "Digite o segundo número: ";
+    cin >> num2;
+
+    switch(operacao) {
+        case '+':
+            cout << "Resultado: " << num1 + num2 << endl;
+            break;
+        case '-':
+            cout << "Resultado: " << num1 - num2 << endl;
+            break;
+        case '*':
+            cout << "Resultado: " << num1 * num2 << endl;
+            break;
+        case '/':
+            if(num2 != 0)
+                cout << "Resultado: " << num1 / num2 << endl;
+            else
+                cout << "Erro! Divisão por zero não é permitida." << endl;
+            break;
+        default:
+            cout << "Operação inválida!" << endl;
+            break;
+    }
+
+    return 0;
 }
